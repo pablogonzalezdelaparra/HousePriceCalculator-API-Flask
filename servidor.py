@@ -9,5 +9,5 @@ servidorWeb = Flask(__name__)
 def holaMundo():
     return render_template('pagina1.html')
 
-if __name__ == '__main__:':
+if __name__ == '__main__':
     servidorWeb.run(debug=False, host='0.0.0.0', port='8080')
