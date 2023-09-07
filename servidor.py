@@ -22,7 +22,7 @@ def modelo():
     print(datos)
     # Convertir los datos en un array
     datos_array = np.array([
-        0.88, 0, 2.6, 0.098, 25, 67, 0.9968,
+        0.88, 0, 2.6, 0.098, 25, 67, 0.9968, 1, 0.4
         datos['ph'],
         datos['sulfato'],
         datos['alcohol'],
