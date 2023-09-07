@@ -18,7 +18,8 @@ def holaMundo():
 @servidorWeb.route("/modelo", methods=['POST'])
 def modelo():
     # Recibir los datos de la petición
-    datos = request.get_json(force=True)
+    datos = request.json
+    print(datos)
     # Convertir los datos en un array
     datos_array = np.array([
         0.88, 0, 2.6, 0.098, 25, 67, 0.9968,
