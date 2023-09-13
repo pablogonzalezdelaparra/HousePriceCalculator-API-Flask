@@ -101,7 +101,7 @@ def modelo():
             1,
             1,
             infoData["YearBuilt"],
-            infoData["YearRemodAdd"],
+            1,
             infoData["BsmtExposure"],
             infoData["BsmtFinSF1"],
             infoData["TotalBsmtSF"],
