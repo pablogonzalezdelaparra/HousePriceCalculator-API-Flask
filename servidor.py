@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import numpy as np
 from joblib import load
 import os
@@ -8,6 +9,9 @@ dt = load("dt1.joblib")
 
 # Generar el servidor (Back End)
 servidorWeb = Flask(__name__)
+
+# Enable CORS for all routes
+CORS(servidorWeb, resources={r'/*': {'origins': '*'}})
 
 # Envío de datos a través de JSON
 @servidorWeb.route("/model/getPrediction", methods=["POST"])
