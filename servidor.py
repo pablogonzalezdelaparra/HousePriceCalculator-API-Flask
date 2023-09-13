@@ -92,7 +92,7 @@ def modelo():
     print("Datos: \n", infoData, "\n")
 
     # Preprocesamiento de los datos
-    dataProcessing(infoData)
+    #dataProcessing(infoData)
 
     # Convertir los datos en un array
     datos_array = np.array(
