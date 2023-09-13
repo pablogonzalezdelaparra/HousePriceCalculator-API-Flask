@@ -16,15 +16,15 @@ CORS(servidorWeb, resources={r"/*": {"origins": "*"}})
 
 def dataProcessing(infoData):
 
-    #BsmtExposure (TODO: REVISAR)
+    #BsmtExposure
     if infoData["BsmtExposure"] == "Gd":
-        infoData["BsmtExposure"] = 1
+        infoData["BsmtExposure"] = 3
     elif infoData["BsmtExposure"] == "Av":
         infoData["BsmtExposure"] = 2
     elif infoData["BsmtExposure"] == "Mn":
-        infoData["BsmtExposure"] = 2
+        infoData["BsmtExposure"] = 1
     elif infoData["BsmtExposure"] == "No":
-        infoData["BsmtExposure"] = 3
+        infoData["BsmtExposure"] = 0
     else:
         pass
 
@@ -236,8 +236,8 @@ def modelo():
             1,
             1,
             infoData["YearBuilt"],
-            1, # TODO: REVISAR
-            infoData["BsmtExposure"], #TODO:REVISAR
+            infoData["YearRemodAdd"],
+            infoData["BsmtExposure"],
             infoData["BsmtFinSF1"],
             infoData["TotalBsmtSF"],
             1,
