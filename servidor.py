@@ -103,7 +103,7 @@ def modelo():
             infoData["YearBuilt"],
             1,
             infoData["BsmtExposure"],
-            infoData["BsmtFinSF1"],
+            1,
             infoData["TotalBsmtSF"],
             1,
             infoData["CentralAir"],
